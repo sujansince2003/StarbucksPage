@@ -1,0 +1,324 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+a
+{
+    text-decoration: none;
+}
+
+
+/* Header section starts here */
+header{
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header nav
+{
+    
+   padding: 10px 40px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hamburger
+{
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.hamburger1
+{
+    width:25px;
+    height:2px;
+    border-radius: 10px;
+    background-color:black;
+
+    margin-bottom: 5px;
+}
+
+
+nav ul
+{
+   
+list-style: none;
+display: flex;
+}
+nav ul li 
+{
+ margin: 0px 40px; 
+ text-decoration: none;
+}
+.logo
+{
+    
+    max-width: 70px;
+}
+/* Header section ends here */
+
+
+/* hero section starts here */
+.hero
+{
+    position: relative;
+    top:150px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+   
+}
+.text1
+{
+    max-width: 600px;
+   
+   
+}
+
+.text1 h2
+{
+    font-size: 60px;
+    font-weight: 600;
+  
+}
+span
+{
+   
+    font-weight: 900;
+    color: #017143;
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+.text1 p
+{
+  padding-top: 10px;
+
+    
+    
+}
+.text1 a
+{
+    display: inline-block;
+  margin-top: 20px;
+  background-color: #017143;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  
+    
+    
+}
+.imgbox
+{
+    max-width: 300px;
+    max-height: 400px;
+   
+}
+.hero img
+{
+    max-width: 300px;
+}
+/* hero section ends here */
+
+
+/* thumbnail section */
+.thumbnail
+{
+    position: relative;
+    top:150px;
+    width: 100%;
+}
+.thumbnail ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+ 
+}
+.thumbnail ul li
+{
+   margin-left:30px;
+   transition: 0.5s;
+ 
+}
+.thumbnail ul li:hover
+{
+   transform: translateY(-10px);
+ 
+}
+.thumbnail img
+{
+    max-width: 60px;
+}
+
+
+/* clip path ::for color background behind hero images  */
+.circle
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #017143;
+   clip-path: circle(600px at right 800px);
+}
+
+
+/* for hamburger and toggle class */
+.active >div
+{
+    transition:0.5s;
+    z-index: 3;
+    
+}
+.active div:nth-child(1)
+{
+   transform: rotate(45deg);
+   transform-origin: right;
+   position: relative;
+   top: 11px;
+   right: 4px;
+   
+   
+  
+   
+}
+.active div:nth-child(2)
+{
+    
+    display: none;
+}
+.active div:last-child
+{
+    transform: rotate(-45deg);
+    transform-origin: right;
+    position: relative;
+   bottom: 13px;
+   right: 4px;
+}
+.navigation.active
+{
+    position: fixed;
+    top: 0px;
+    right:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 2;
+   
+}
+.navigation.active >li
+{
+    margin: 20px;
+    font-size: 30px;
+}
+
+
+
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+
+    header nav
+{
+    
+   
+    padding: 0px 20px; 
+   
+   
+   
+}
+    header .logo
+    {
+       width: 60px;
+       padding: 10px;
+    }
+  header ul 
+  {
+    display: none;
+  }
+  .hamburger
+{
+    display: inline-block;
+    
+}
+.hero
+{
+    top:90px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+.text1 h2
+{
+    font-size: 35px;
+}
+span
+{
+   font-size: 50px;
+    letter-spacing: 2px;
+}
+.imgbox
+{ 
+   
+    margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.hero img
+{
+    
+    max-width: 300px;
+    height: 400px;
+  
+    
+}
+.text1 a
+{
+    margin-bottom: 50px;
+  
+    
+    
+}
+.thumbnail
+{
+  
+    top:160px;
+ 
+}
+
+.circle
+{
+  
+   clip-path: circle(320px at center bottom);
+}
+  }
+
+  /* suzan codes */
+  

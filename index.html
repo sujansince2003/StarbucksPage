@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
+      </style>
+</head>
+<body>
+    <section class="container">
+     <div class="circle" ></div>
+    <header>
+
+    <nav>
+        <img src="./Img/logo.png" alt="" class="logo">
+        <ul class="navigation ">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">Services</a></li>
+            <li> <a href="#">Menu</a></li>
+            <li> <a href="#">About Us</a></li>
+           
+        </ul>
+        <button class="hamburger">
+            
+            <div class="hamburger1"></div>
+            <div class="hamburger1"></div>
+            <div class="hamburger1"></div>
+       
+        </button>
+       
+    </nav>
+    </header>
+<section class="hero">
+
+<div class="text1">
+    <h2>It's not just a Coffee<br>
+         It's <span>
+        StarBucks
+    </span>
+    </h2>
+    <p class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem minima, eaque provident architecto harum incidunt possimus ipsa sint repellat nam. Deleniti non autem velit, inventore quia recusandae natus! Minima placeat perferendis repellat esse est consectetur quos, adipisci, a in labore aspernatur quis soluta pariatur veniam! Quis consequuntur voluptatum reiciendis?
+    </p>
+    <a href="#">Learn more></a>
+</div>
+<div class="imgbox">
+    <img class="mainimg" src="./Img/heroimg1.png" alt="failed to load">
+</div>
+</section>
+<div class="thumbnail">
+    <ul>
+        <li><img src="./Img/thumb1.png" alt="" class="thumbimg" onclick="changeheroImg('/Img/heroimg1.png');changeCirclecolor('#017143')"></li>
+        <li><img src="./Img/thumb2.png" alt="" class="thumbimg" onclick="changeheroImg('/Img/heroimg2.png');changeCirclecolor('#eb7495')"></li>
+        <li><img src="./Img/thumb3.png" alt="" class="thumbimg" onclick="changeheroImg('/Img/heroimg3.png');changeCirclecolor('#d752b1')"></li>
+    </ul>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
